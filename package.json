@@ -1,0 +1,32 @@
+{
+  "name": "expressproject",
+  "version": "1.0.0",
+  "description": "using pluralsight tutorial",
+  "main": "index.js",
+  "scripts": {
+    "start": "set DEBUG=app,app:* & nodemon app.js",
+    "debug": "set DEBUG=* & nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nix",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "cookie-parser": "^1.4.6",
+    "debug": "^4.3.4",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "express-session": "^1.17.3",
+    "mongodb": "^4.8.1",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.19",
+    "passport": "^0.6.0"
+  },
+  "nodemonConfig": {
+    "restartable": "rs",
+    "delay": 2500,
+    "env": {
+      "PORT": 3000
+    }
+  }
+}
